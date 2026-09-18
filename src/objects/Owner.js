@@ -1,4 +1,4 @@
-import { getRandomStones } from '../data/stoneData.js';
+import { getRandomStones } from './data/stoneData.js';
 
 
 export class Owner{
@@ -6,7 +6,7 @@ export class Owner{
         this.playerNum = playerNum;
         this.numStones = 5;
         this.score = 0;
-        this.stones[i] = getRandomStone(5);
+        this.stones = getRandomStones(5);
 
     }
 }
