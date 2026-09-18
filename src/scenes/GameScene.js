@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import { Board } from '../objects/Board.js';
+import { Owner } from '../objects/Owner.js';
 
 const CELL_SIZE = 120;
 const GRID_ORIGIN_X = 200;
@@ -9,6 +10,8 @@ export class GameScene extends Phaser.Scene {
     constructor(){
         super('GameScene');
         this.currentPlayer = 1;
+        this.player1 = new Owner(1);
+        this.player2 = new Owner(2);
     }
 
     create(){
@@ -19,9 +22,10 @@ export class GameScene extends Phaser.Scene {
 
     renderHands(){
         //owner
+        stones[5] 
         for(let i = 0; i < 5; i++){
-            const rect = this.add.rectangle(x, y, CELL_SIZE - 4, CELL_SIZE - 4, 0x3a3a5c);
-            this.player1.stones[i];
+            tempRect = this.add.rectangle(100 + (200*i), 600, CELL_SIZE - 4, CELL_SIZE - 4, 0x3a3a5c);
+            tempRect = this.player1.stones[i];
         }
     }
 
