@@ -31,7 +31,7 @@ export class GameScene extends Phaser.Scene {
         for(let i = 0; i < 5; i++){
             const owner1Hand = this.add.rectangle(100 + (200*i), 600, CELL_SIZE - 4, CELL_SIZE - 4, 0x3a3a5c);
             owner1Hand.setData('stone', this.player1.stones[i]);
-           // const image = this.add.image(100 + (200*i), 600, stone.image);
+           // const image = this.add.image(100 + (200*i), 600, stone.image);;
            // rect.drawImage(this.player1.stones[i].image, img, 100 + (200*i), 600, CELL_SIZE - 4, CELL_SIZE - 4,);
 
             owner1Hand.setInteractive();
